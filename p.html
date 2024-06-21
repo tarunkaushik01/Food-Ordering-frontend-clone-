@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="p.css">
+</head>
+<body>
+    <div id="total"><div class="preloader">
+        <img src="preload.gif" alt="" height="200px" style="margin-top:200px ;">
+        <p class="text">Loading please wait ...</p></div>
+    </div>
+    <div class="container">
+        <div class="div1">
+           <div class="div11">
+            <span style="margin-left: 30px;font-size: 25px;">♨chai</span><span style="color:lawngreen ; font-size: 25px;">garam</span>
+            <ul>
+                <li style="margin-right:30px ;cursor: pointer;" class="pi"><a href="Login Page/html3.html" target="_blank">login</a></li>
+                <li class="sign" ><a href="signup page/html4.html" target="_blank">sign up</a></li>
+            </ul><hr>
+            <br><br><br>
+           <center><h1>are you <SPAN id="changing" style="color:greenyellow ;"></SPAN></h1><br>
+           </center>
+            <center><span><h6><a href="#"> no problem we are here to deliver food to your step.</a></H6></span><br>
+            </center><br>
+            <h3 class="cat" style="text-align: center; text-transform:uppercase; font-weight: 300;">more then 50 catregries...</h3><br>
+            <center><button type="button"><a href="order now page/html2.html" target="_blank"> order now</a></button></center><br><br><br>
+            <center><p>manav rachna university, between k and l block! &nbsp;&nbsp;&nbsp;&nbsp; hurry up..</p></center>
+           </div>
+        </div>
+        <div class="div2"><img src="images/img1.jpg" alt="" height="100%" width="100%" style="box-sizing: border-box; border-top-left-radius: 100px; border-bottom-right-radius: 100px;"></div>
+    </div>
+    <div class="div3">
+          <div class="div31"><img src="images/download.jpg" alt="" height="180px" style="border-radius:10px ; margin-left:70px; margin-top:10px">
+        <h1 style="margin-left:-8px;color: whitesmoke;  ">No Minimum Order</h1>
+        <p id="text">order as much food as you want</p></div>
+        
+          <div class="div31"><img src="images/delivery.png" alt="" height="180px" style="border-radius:10px ; margin-left:70px; margin-top:10px">
+            <h1 style="margin-left:10px;color: whitesmoke;">Speedy Delivery</h1>
+            <p id="text" style="margin-left:110px;">faster than your hunger</p></div>
+          <div class="div31"><img src="images/pre.jpg" alt="" height="180px" width="260px" style="border-radius:10px ; margin-left:100px; margin-top:10px">
+            <h1 style="margin-left:25px; color: whitesmoke;">Only Premium Food</h1>
+            <p id="text" style="margin-left:150px;">specially hygeined</p></div>
+    </div>
+    <div class="final">
+        <div class="final1"><span id="final">contact</span><br><br>
+<div id="k">
+    <span>help and support</span><br>
+    <span>partner wih us</span><br>
+    <span>feedback</span><br>
+    <span>ride with us</span>
+</div>
+        
+    </div>
+
+        <div class="final1"><span id="final">terms and conditions</span><br><br>
+            <div id="k">
+                <span>cancellation amd refund</span><br>
+                <span>privacy policy</span><br>
+                <span>cookie policy</span><br>
+                <span>offer terms</span>
+            </div>
+            </div>
+        <div class="final1"><span id="final"></span></div>
+    </div>
+    <hr><hr>
+    <footer>
+        <span style="color:white ;">♨chaigaram</span>
+    </footer>
+    
+    <script>
+        var load = document.getElementById("total");
+        window.addEventListener("load", function(){
+            load.style.display = "none";
+        })  
+    
+    var text = ["Tired?", "Busy?", "Hungry?", "in Rain?"];
+    var counter = 0;
+    var elem = document.getElementById("changing");
+    var inst = setInterval(change, 1500);
+
+    function change() {
+    elem.innerHTML = text[counter];
+    counter++;
+    if (counter >= text.length) {
+        counter = 0;
+        }
+    }
+    </script>
+</body>
+
+</html>
